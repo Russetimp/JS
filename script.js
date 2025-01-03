@@ -50,3 +50,23 @@
 //     alert (number);
 //     break;} 
 // }
+
+// // 2.15 Функции
+// let from = "Аня";
+// console.log( from );
+//   function showMessage1(text) {
+//     from = '*' + from + '*'; 
+//     console.log( from + ': ' + text );
+//   }
+//   showMessage1("Привет"); 
+//   console.log( from ); 
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
+//   ask(
+//     "Вы согласны?",
+//     function() { alert("Вы согласились."); },
+//     function() { alert("Вы отменили выполнение."); }
+//   );
