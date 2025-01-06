@@ -210,3 +210,29 @@
 //   console.log( getMaxSubSum([-2, -1, 1, 2]) ); // 3
 //   console.log( getMaxSubSum([1, 2, 3]) ); // 6
 //   console.log( getMaxSubSum([100, -9, 2, -3, 5]) ); // 100
+
+// // 5.5 Методы массивов. Задачи
+// function filterRangeInPlace(arr, a, b) {
+//     for (let i = 0; i < arr.length; i++) {
+//         console.log(i);
+//         console.log(arr);
+//       let val = arr[i];
+//       // удалить, если за пределами интервала
+//       if (val < a || val > b) {
+//         arr.splice(i, 1);
+//         i--;
+//       }
+//     }
+//   }
+//   let arr = [5, 3, 8, 1];
+//   filterRangeInPlace(arr, 1, 4); // удалены числа вне диапазона 1..4
+
+// let arr = [5, 2, 1, -10, 8];
+// arr.sort( (a, b) => b - a );
+// console.log( arr );
+
+// let arr = ["HTML", "JavaScript", "CSS"];
+// let sorted = [...arr];
+// sorted.sort( (a, b) => a.localeCompare(b) )
+// console.log( sorted ); // CSS, HTML, JavaScript
+// console.log( arr ); // HTML, JavaScript, CSS (без изменений)
