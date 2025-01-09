@@ -236,3 +236,40 @@
 // sorted.sort( (a, b) => a.localeCompare(b) )
 // console.log( sorted ); // CSS, HTML, JavaScript
 // console.log( arr ); // HTML, JavaScript, CSS (без изменений)
+
+// function Calculator() {
+//   this.methods = {
+//     "-": (a, b) => a - b,
+//     "+": (a, b) => a + b,
+//   };
+//   this.calculate = function (str) {
+//     let split = str.split(" "),
+//       a = +split[0],
+//       op = split[1],
+//       b = +split[2];
+//     //   if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+//     //     return NaN;
+//     //   }
+//     // console.log("Сейчас this это:", this); // 10
+//     return this.methods[op](a, b);
+//   };
+//   // this.addMethod = function(name, func) {
+//   //   this.methods[name] = func;
+//   // };
+// }
+// let calc = new Calculator();
+// console.log(calc.methods); // 10
+// console.log(calc.this.methods); // 10
+// // console.log(calc.calculate); // 10
+// // console.log(calc.calculate("3 + 7")); // 10
+
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+// let users = [ vasya, petya, masha ];
+// let names = users.map(item => item.name);
+// // let names = [];
+// // users.forEach((i) => {
+// //   names.push(i.name);
+// // });
+// console.log( names ); // Вася, Петя, Маша
