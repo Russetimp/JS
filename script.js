@@ -263,6 +263,7 @@
 // // console.log(calc.calculate); // 10
 // // console.log(calc.calculate("3 + 7")); // 10
 
+// //Трансформировать в массив имён
 // let vasya = { name: "Вася", age: 25 };
 // let petya = { name: "Петя", age: 30 };
 // let masha = { name: "Маша", age: 28 };
@@ -273,3 +274,49 @@
 // //   names.push(i.name);
 // // });
 // console.log( names ); // Вася, Петя, Маша
+
+// // Трансформировать в объекты
+// let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+// let petya = { name: "Петя", surname: "Иванов", id: 2 };
+// let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+// let users = [ vasya, petya, masha ];
+
+// let usersMapped = users.map(user => ({ fullName: `${user.name} ${user.surname}`, id: user.id}))
+// /*
+// usersMapped = [
+//   { fullName: "Вася Пупкин", id: 1 },
+//   { fullName: "Петя Иванов", id: 2 },
+//   { fullName: "Маша Петрова", id: 3 }
+// ]
+// */
+// console.log( usersMapped[0].id ) // 1
+// console.log( usersMapped[0].fullName ) // Вася Пупкин
+
+// // Отсортировать пользователей по возрасту
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+
+// let arr = [ vasya, petya, masha ];
+// let sortByAge = (arr) => {
+//     arr.sort ((a,b) => a.age - b.age);
+// }
+// sortByAge(arr);
+
+// // теперь: [vasya, masha, petya]
+// console.log(arr[0].name); // Вася
+// console.log(arr[1].name); // Маша
+// console.log(arr[2].name); // Петя
+
+// Перемешайте массив
+let arr = [1, 2, 3];
+
+shuffle(arr);
+// arr = [3, 2, 1]
+
+shuffle(arr);
+// arr = [2, 1, 3]
+
+shuffle(arr);
+// arr = [3, 1, 2]
